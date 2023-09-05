@@ -61,7 +61,7 @@ importObserver.Exception += (model, uniqueId, exception) =>
 var sourceData = new UmtModel[]
 {
     // TODO: use your data
-    UserSamples.FreddyAdministrator,
+    UserSamples.SampleAdministrator,
     DataClassSamples.ArticleClassSample,
     DataClassSamples.EventDataClass,
     TreeNodeSamples.YearlyEvent,

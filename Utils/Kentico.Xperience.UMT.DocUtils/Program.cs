@@ -200,3 +200,5 @@ foreach (var solutionProject in solution.Projects)
         }
     }
 }
+
+await MdHelper.RenderTemplateToFile("SampleJson", new SampleJsonViewModel(importService), Path.Join(targetDirectory, $"Samples\\basic.json"));

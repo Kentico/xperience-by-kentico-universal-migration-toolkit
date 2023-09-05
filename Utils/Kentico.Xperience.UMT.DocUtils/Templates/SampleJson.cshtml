@@ -1,0 +1,10 @@
+﻿@using Kentico.Xperience.UMT
+@using RazorLight
+@inherits TemplatePage<Kentico.Xperience.UMT.Templates.SampleJsonViewModel>
+[
+    @Raw(Model.ImportService.SerializeToJson(UserSamples.SampleAdministrator)),
+    @Raw(Model.ImportService.SerializeToJson(DataClassSamples.EventDataClass)),
+    @Raw(Model.ImportService.SerializeToJson(DataClassSamples.ArticleClassSample)),
+    @Raw(Model.ImportService.SerializeToJson(TreeNodeSamples.SingleOccurenceEvent)),
+    @Raw(Model.ImportService.SerializeToJson(TreeNodeSamples.YearlyEvent))
+]

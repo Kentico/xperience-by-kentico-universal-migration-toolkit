@@ -24,6 +24,7 @@
 
 
     <ItemGroup>
+      <EmbeddedResource Include="Templates\SampleJson.cshtml" />
       <EmbeddedResource Include="Templates\UmtModel.cshtml" />      
       <None Remove="Templates\FormComponents.cshtml" />
       <EmbeddedResource Include="Templates\FormComponents.cshtml" />

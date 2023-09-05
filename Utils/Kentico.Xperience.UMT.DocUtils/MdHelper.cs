@@ -13,7 +13,7 @@ public static class MdHelper
     {
         var builder = new RazorLightEngineBuilder()
             .EnableDebugMode()
-            .UseEmbeddedResourcesProject(typeof(MdHelper).Assembly, "Kentico.Xperience.UMT.Templates")
+            .UseEmbeddedResourcesProject(typeof(MdHelper).Assembly, "Kentico.Xperience.UMT.DocUtils.Templates")
             .UseMemoryCachingProvider();
     
         Engine = builder

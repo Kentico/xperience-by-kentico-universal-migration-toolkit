@@ -38,7 +38,7 @@ public class SampleTests
 
         await importService.StartImportAsync(new UmtModel[]
         {
-            UserSamples.FreddyAdministrator,
+            UserSamples.SampleAdministrator,
             DataClassSamples.ArticleClassSample,
             DataClassSamples.EventDataClass,
             TreeNodeSamples.YearlyEvent,
@@ -52,7 +52,7 @@ public class SampleTests
         {
             if (first.Should().BeOfType<UserInfo>().Subject is { } user)
             {
-                user.Should().BeEquivalentTo(UserSamples.FreddyAdministrator, options => options
+                user.Should().BeEquivalentTo(UserSamples.SampleAdministrator, options => options
                     .Including(ui => ui.Email)
                     .Including(ui => ui.FirstName)
                     .Including(ui => ui.LastName)
